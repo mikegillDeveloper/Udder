@@ -11,18 +11,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            HStack {
-                Image(systemName: "person.circle")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.red)
-                    .frame(width: 50, height: 50, alignment: .center)
-            Text("Udder")
-            .font(.title)
-            .foregroundColor(.blue)
+            VStack {
+                HStack {
+                    Image(systemName: "person.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                        .foregroundColor(.red)
+                        .frame(width: 50, height: 50, alignment: .center)
+                Text("Udder")
+                .font(.title)
+                .foregroundColor(.blue)
+                }
+                Text("Making Milk Real!")
+                    .foregroundColor(.gray)
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
+                    
+                }
+
             }
-            Text("Making Milk Real!")
-                .foregroundColor(.gray)
         }
     }
 }
