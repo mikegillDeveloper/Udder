@@ -10,7 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            HStack {
+                Image(systemName: "person.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.red)
+                    .frame(width: 50, height: 50, alignment: .center)
+            Text("Udder")
+            .font(.title)
+            .foregroundColor(.blue)
+            }
+            Text("Making Milk Real!")
+                .foregroundColor(.gray)
+        }
     }
 }
 
